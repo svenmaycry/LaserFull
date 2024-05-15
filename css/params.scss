@@ -4,6 +4,10 @@ body {
   //display: flex;
   //flex-direction: column;
 
+  @media (min-width: 1279px) {
+    padding-right: calc(17px - (100vw - 100%));
+  }
+
   > * {
     min-width: 0;
   }
@@ -15,6 +19,7 @@ body {
 
   // Прижимаем footer
   > main {
+    margin-top: 76px;
     // flex:1 1 auto;
     //  overflow: auto;
   }
@@ -30,3 +35,26 @@ body {
 }
 
 //===================================================
+
+// Основные цвета
+$mainBlackColor: #000;
+$mainFontColor: #000000;
+$shadowVeryLowColor: rgba(0, 0, 0, 0.2);
+$shadowLowColor: rgba(0, 0, 0, 0.4);
+$shadowHighColor: rgba(0, 0, 0, 1);
+$shadowMiddleColor: rgba(0, 0, 0, 0.8);
+$mainWhiteColor: rgb(255, 255, 255);
+$greyColor: #9c9a9a;
+$greyBorderColor: #7979791f;
+$inputBorder: #a7a7a7;
+$inputBackColor: #c7c7c756;
+$blueColor: #0094da;
+$blueBackColor: #00b7ff75;
+$beigeColor: #faebd7;
+$primary-color: #0094da;
+$blueGradientColor: #00b7ff;
+$grayGradientColor: rgb(247, 247, 247);
+$redColor: #fe3831;
+$danger-color: #ee4122;
+$vkColor: rgb(0, 119, 255);
+$tgColor: #25a0dd;
