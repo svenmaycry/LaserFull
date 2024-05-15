@@ -1,0 +1,32 @@
+// Общие параметры
+
+body {
+  //display: flex;
+  //flex-direction: column;
+
+  > * {
+    min-width: 0;
+  }
+
+  // Скролл заблокирован
+  &.lock {
+    overflow: hidden;
+  }
+
+  // Прижимаем footer
+  > main {
+    // flex:1 1 auto;
+    //  overflow: auto;
+  }
+}
+
+// Стили будут применяться ко всем классам содержащим   container
+
+[class*=" container"] {
+  max-width: 1750px;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+//===================================================
